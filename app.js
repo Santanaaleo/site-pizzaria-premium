@@ -144,30 +144,22 @@ orderForm.addEventListener("submit", (event) => {
 
   const itemsText = cart.map((item) => {
     const subtotal = item.price * item.quantity;
-   return `- ${item.quantity}x ${item.name} - ${formatPrice(subtotal)}`;
+    return `- ${item.quantity}x ${item.name} - ${formatPrice(subtotal)}`;
   }).join("\n");
 
-  const message = `
-NOVO PEDIDO
-
-Cliente:
-${clientName}
-
-Endereco:
-${clientAddress}
-
-Itens:
-${itemsText}
-
-Observacoes:
-${orderNotes || "Nenhuma observacao."}
-
-Pagamento:
-${paymentMethod}
-
-Total:
-${formatPrice(total)}
-`;
+  const message = [
+    "NOVO PEDIDO - BELLA MASSA",
+    "",
+    `Cliente: ${clientName}`,
+    `Endereco: ${clientAddress}`,
+    "",
+    "Itens:",
+    itemsText,
+    "",
+    `Observacoes: ${orderNotes || "Nenhuma observacao."}`,
+    `Forma de pagamento: ${paymentMethod}`,
+    `Total: ${formatPrice(total)}`
+  ].join("\n");
 
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
