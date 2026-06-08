@@ -144,28 +144,28 @@ orderForm.addEventListener("submit", (event) => {
 
   const itemsText = cart.map((item) => {
     const subtotal = item.price * item.quantity;
-    return `• ${item.quantity}x ${item.name} - ${formatPrice(subtotal)}`;
+    return `- ${item.quantity}x ${item.name} - ${formatPrice(subtotal)}`;
   }).join("\n");
 
   const message = `
-🍕 NOVO PEDIDO
+NOVO PEDIDO
 
-👤 Cliente:
+Cliente:
 ${clientName}
 
-📍 Endereço:
+Endereco:
 ${clientAddress}
 
-🍕 Itens:
+Itens:
 ${itemsText}
 
-📝 Observações:
-${orderNotes || "Nenhuma observação."}
+Observacoes:
+${orderNotes || "Nenhuma observacao."}
 
-💳 Pagamento:
+Pagamento:
 ${paymentMethod}
 
-💰 Total:
+Total:
 ${formatPrice(total)}
 `;
 
