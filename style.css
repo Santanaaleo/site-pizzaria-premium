@@ -572,9 +572,13 @@ h2 {
   color: var(--muted);
 }
 
-.order-form select option {
-  background: #15100e;
-   color: #ffffff;
+.order-form select {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.08);
+  color: #ffffff;
 }
 
 @media (max-width: 880px) {
