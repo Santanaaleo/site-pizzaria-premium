@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bella Massa | Pizzaria Premium</title>
-  <meta name="description"
-content="Pizzaria premium com pedidos online, entrega rápida e sabores especiais." />
-<link rel="icon" type="image/png" href="./favicon.png">
-  <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta property="og:title" content="Bella Massa">
-<meta property="og:description" content="Pizzaria premium com pedidos online.">
-<meta property="og:type" content="website">
+  <meta
+    name="description"
+    content="Pizzaria premium com pedidos online, entrega rápida e sabores especiais."
+  />
+  <meta property="og:title" content="Bella Massa" />
+  <meta property="og:description" content="Pizzaria premium com pedidos online." />
+  <meta property="og:type" content="website" />
 
+  <title>Bella Massa | Pizzaria Premium</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
-    <nav class="nav">
-     <a href="#" class="logo">
-  <img src="/logo.png" alt="Bella Massa">
-</a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio" class="logo" aria-label="Bella Massa">
+        <img src="/logo.png" alt="Bella Massa" />
+      </a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu">
         ☰
       </button>
 
@@ -47,7 +48,7 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary" target="_blank" href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido.">
+          <a class="btn primary" target="_blank" rel="noopener" href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido.">
             Pedir no WhatsApp
           </a>
           <a class="btn secondary" href="#cardapio">Ver cardápio</a>
@@ -116,94 +117,10 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
     </section>
 
     <section class="section menu-section" id="cardapio">
-  <div class="section-title reveal">
-    <p class="tag">Cardápio</p>
-    <h2>Monte seu pedido</h2>
-  </div>
-
-  <div class="menu-grid">
-    <article class="menu-item reveal">
-      <div>
-        <h3>Margherita Especial</h3>
-        <p>Molho artesanal, mussarela, tomate fresco e manjericão.</p>
+      <div class="section-title reveal">
+        <p class="tag">Cardápio</p>
+        <h2>Monte seu pedido</h2>
       </div>
-      <div class="menu-action">
-        <span>R$ 46,90</span>
-        <button class="add-btn" data-name="Margherita Especial" data-price="46.90">Adicionar</button>
-      </div>
-    </article>
-
-    <article class="menu-item reveal">
-      <div>
-        <h3>Frango com Catupiry</h3>
-        <p>Frango temperado, catupiry original, milho e orégano.</p>
-      </div>
-      <div class="menu-action">
-        <span>R$ 48,90</span>
-        <button class="add-btn" data-name="Frango com Catupiry" data-price="48.90">Adicionar</button>
-      </div>
-    </article>
-
-    <article class="menu-item reveal">
-      <div>
-        <h3>Portuguesa</h3>
-        <p>Presunto, ovos, cebola, mussarela, ervilha e azeitonas.</p>
-      </div>
-      <div class="menu-action">
-        <span>R$ 50,90</span>
-        <button class="add-btn" data-name="Portuguesa" data-price="50.90">Adicionar</button>
-      </div>
-    </article>
-
-    <article class="menu-item reveal">
-      <div>
-        <h3>Bella Supreme</h3>
-        <p>Blend de queijos, pepperoni, bacon crocante e molho especial.</p>
-      </div>
-      <div class="menu-action">
-        <span>R$ 59,90</span>
-        <button class="add-btn" data-name="Bella Supreme" data-price="59.90">Adicionar</button>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="section order-section" id="pedido">
-  <div class="section-title reveal">
-    <p class="tag">Pedido online</p>
-    <h2>Finalize pelo WhatsApp</h2>
-  </div>
-
-  <div class="order-box reveal">
-    <div class="cart">
-      <h3>Seu pedido</h3>
-      <div id="cartItems" class="cart-items">
-        <p class="empty-cart">Nenhum item adicionado ainda.</p>
-      </div>
-
-      <div class="cart-total">
-        <span>Total</span>
-        <strong id="cartTotal">R$ 0,00</strong>
-      </div>
-    </div>
-
-    <form class="order-form" id="orderForm">
-      <input type="text" id="clientName" placeholder="Seu nome" required>
-      <input type="text" id="clientAddress" placeholder="Endereço de entrega" required>
-
-      <select id="paymentMethod" required>
-   <option value="" disabled selected hidden>Forma de pagamento</option>
-        <option value="Pix">Pix</option>
-        <option value="Dinheiro">Dinheiro</option>
-        <option value="Cartão na entrega">Cartão na entrega</option>
-      </select>
-
-      <textarea id="orderNotes" placeholder="Observações: sem cebola, borda, ponto da massa etc."></textarea>
-
-      <button type="submit" class="btn primary">Finalizar pedido no WhatsApp</button>
-    </form>
-  </div>
-</section>
 
       <div class="menu-grid">
         <article class="menu-item reveal">
@@ -211,7 +128,10 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
             <h3>Margherita Especial</h3>
             <p>Molho artesanal, mussarela, tomate fresco e manjericão.</p>
           </div>
-          <span>R$ 46,90</span>
+          <div class="menu-action">
+            <span>R$ 46,90</span>
+            <button class="add-btn" type="button" data-name="Margherita Especial" data-price="46.90">Adicionar</button>
+          </div>
         </article>
 
         <article class="menu-item reveal">
@@ -219,7 +139,10 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
             <h3>Frango com Catupiry</h3>
             <p>Frango temperado, catupiry original, milho e orégano.</p>
           </div>
-          <span>R$ 48,90</span>
+          <div class="menu-action">
+            <span>R$ 48,90</span>
+            <button class="add-btn" type="button" data-name="Frango com Catupiry" data-price="48.90">Adicionar</button>
+          </div>
         </article>
 
         <article class="menu-item reveal">
@@ -227,16 +150,59 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
             <h3>Portuguesa</h3>
             <p>Presunto, ovos, cebola, mussarela, ervilha e azeitonas.</p>
           </div>
-          <span>R$ 50,90</span>
+          <div class="menu-action">
+            <span>R$ 50,90</span>
+            <button class="add-btn" type="button" data-name="Portuguesa" data-price="50.90">Adicionar</button>
+          </div>
         </article>
 
         <article class="menu-item reveal">
           <div>
-            <h3>Bella Massa Supreme</h3>
+            <h3>Bella Supreme</h3>
             <p>Blend de queijos, pepperoni, bacon crocante e molho especial.</p>
           </div>
-          <span>R$ 59,90</span>
+          <div class="menu-action">
+            <span>R$ 59,90</span>
+            <button class="add-btn" type="button" data-name="Bella Supreme" data-price="59.90">Adicionar</button>
+          </div>
         </article>
+      </div>
+    </section>
+
+    <section class="section order-section" id="pedido">
+      <div class="section-title reveal">
+        <p class="tag">Pedido online</p>
+        <h2>Finalize pelo WhatsApp</h2>
+      </div>
+
+      <div class="order-box reveal">
+        <div class="cart">
+          <h3>Seu pedido</h3>
+          <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Nenhum item adicionado ainda.</p>
+          </div>
+
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">R$ 0,00</strong>
+          </div>
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <input type="text" id="clientName" placeholder="Seu nome" required />
+          <input type="text" id="clientAddress" placeholder="Endereço de entrega" required />
+
+          <select id="paymentMethod" required>
+            <option value="" disabled selected hidden>Forma de pagamento</option>
+            <option value="Pix">Pix</option>
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Cartão na entrega">Cartão na entrega</option>
+          </select>
+
+          <textarea id="orderNotes" placeholder="Observações: sem cebola, borda, ponto da massa etc."></textarea>
+
+          <button type="submit" class="btn primary">Finalizar pedido no WhatsApp</button>
+        </form>
       </div>
     </section>
 
@@ -256,7 +222,7 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
           Ideal para reunir a família, pedir no fim de semana ou transformar qualquer noite comum
           em uma experiência especial.
         </p>
-        <a class="btn primary" target="_blank" href="https://wa.me/5511999999999?text=Olá!%20Quero%20conhecer%20o%20cardápio.">
+        <a class="btn primary" target="_blank" rel="noopener" href="https://wa.me/5511999999999?text=Olá!%20Quero%20conhecer%20o%20cardápio.">
           Chamar no WhatsApp
         </a>
       </div>
@@ -297,10 +263,10 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
         <p>Terça a domingo • 18h às 23h30</p>
 
         <div class="contact-actions">
-          <a class="btn primary" target="_blank" href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido.">
+          <a class="btn primary" target="_blank" rel="noopener" href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido.">
             Pedir pelo WhatsApp
           </a>
-          <a class="btn secondary" target="_blank" href="https://www.google.com/maps">
+          <a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps">
             Ver localização
           </a>
         </div>
@@ -308,7 +274,7 @@ content="Pizzaria premium com pedidos online, entrega rápida e sabores especiai
     </section>
   </main>
 
-  <a class="whatsapp-float" target="_blank" href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido." aria-label="WhatsApp">
+  <a class="whatsapp-float" target="_blank" rel="noopener" href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido." aria-label="WhatsApp">
     ✆
   </a>
 
