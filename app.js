@@ -144,7 +144,7 @@ orderForm.addEventListener("submit", (event) => {
 
   const itemsText = cart.map((item) => {
     const subtotal = item.price * item.quantity;
-    return `- ${item.quantity}x ${item.name} - ${formatPrice(subtotal)}`;
+   return `- ${item.quantity}x ${item.name} - ${formatPrice(subtotal)}`;
   }).join("\n");
 
   const message = `

@@ -625,4 +625,86 @@ h2 {
   border: 0;
   cursor: pointer;
   font-size: 1rem;
+}.order-box {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 24px !important;
+  background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.035)) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 30px !important;
+  padding: 28px !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.cart,
+.order-form {
+  background: rgba(255,255,255,.04) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 24px !important;
+  padding: 24px !important;
+}
+
+.order-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 100% !important;
+  padding: 16px !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--line) !important;
+  background: rgba(255,255,255,.08) !important;
+  color: var(--text) !important;
+  font-size: 1rem !important;
+}
+
+.order-form textarea {
+  min-height: 110px !important;
+}
+
+.add-btn {
+  padding: 12px 18px !important;
+  border-radius: 999px !important;
+  border: none !important;
+  background: linear-gradient(135deg, var(--gold), #f4c96b) !important;
+  color: #120b07 !important;
+  font-weight: 900 !important;
+  cursor: pointer !important;
+}
+
+.qty-btn {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--line) !important;
+  background: rgba(255,255,255,.12) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  cursor: pointer !important;
+}
+
+.remove-btn {
+  padding: 9px 13px !important;
+  border-radius: 999px !important;
+  border: none !important;
+  background: rgba(214,40,40,.18) !important;
+  color: #ff7676 !important;
+  font-weight: 900 !important;
+  cursor: pointer !important;
+}
+
+.order-form .btn {
+  border: none !important;
+  cursor: pointer !important;
+  text-align: center !important;
+}
+
+@media (max-width: 880px) {
+  .order-box {
+    grid-template-columns: 1fr !important;
+  }
 }
