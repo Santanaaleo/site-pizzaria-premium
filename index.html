@@ -32,7 +32,7 @@
   <main>
     <section class="hero" id="inicio">
       <div class="hero-content reveal">
-        <p class="tag">🍕ola l • forno quente • entrega rápida</p>
+        <p class="tag">🍕ola  • forno quente • entrega rápida</p>
         <h1>Pizza premium feita para transformar sua noite.</h1>
         <p class="hero-text">
           Ingredientes selecionados, borda perfeita e aquele sabor de pizzaria italiana
@@ -109,10 +109,94 @@
     </section>
 
     <section class="section menu-section" id="cardapio">
-      <div class="section-title reveal">
-        <p class="tag">Cardápio</p>
-        <h2>Escolha seu sabor</h2>
+  <div class="section-title reveal">
+    <p class="tag">Cardápio</p>
+    <h2>Monte seu pedido</h2>
+  </div>
+
+  <div class="menu-grid">
+    <article class="menu-item reveal">
+      <div>
+        <h3>Margherita Especial</h3>
+        <p>Molho artesanal, mussarela, tomate fresco e manjericão.</p>
       </div>
+      <div class="menu-action">
+        <span>R$ 46,90</span>
+        <button class="add-btn" data-name="Margherita Especial" data-price="46.90">Adicionar</button>
+      </div>
+    </article>
+
+    <article class="menu-item reveal">
+      <div>
+        <h3>Frango com Catupiry</h3>
+        <p>Frango temperado, catupiry original, milho e orégano.</p>
+      </div>
+      <div class="menu-action">
+        <span>R$ 48,90</span>
+        <button class="add-btn" data-name="Frango com Catupiry" data-price="48.90">Adicionar</button>
+      </div>
+    </article>
+
+    <article class="menu-item reveal">
+      <div>
+        <h3>Portuguesa</h3>
+        <p>Presunto, ovos, cebola, mussarela, ervilha e azeitonas.</p>
+      </div>
+      <div class="menu-action">
+        <span>R$ 50,90</span>
+        <button class="add-btn" data-name="Portuguesa" data-price="50.90">Adicionar</button>
+      </div>
+    </article>
+
+    <article class="menu-item reveal">
+      <div>
+        <h3>Bella Supreme</h3>
+        <p>Blend de queijos, pepperoni, bacon crocante e molho especial.</p>
+      </div>
+      <div class="menu-action">
+        <span>R$ 59,90</span>
+        <button class="add-btn" data-name="Bella Supreme" data-price="59.90">Adicionar</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section order-section" id="pedido">
+  <div class="section-title reveal">
+    <p class="tag">Pedido online</p>
+    <h2>Finalize pelo WhatsApp</h2>
+  </div>
+
+  <div class="order-box reveal">
+    <div class="cart">
+      <h3>Seu pedido</h3>
+      <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Nenhum item adicionado ainda.</p>
+      </div>
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+    </div>
+
+    <form class="order-form" id="orderForm">
+      <input type="text" id="clientName" placeholder="Seu nome" required>
+      <input type="text" id="clientAddress" placeholder="Endereço de entrega" required>
+
+      <select id="paymentMethod" required>
+        <option value="">Forma de pagamento</option>
+        <option value="Pix">Pix</option>
+        <option value="Dinheiro">Dinheiro</option>
+        <option value="Cartão na entrega">Cartão na entrega</option>
+      </select>
+
+      <textarea id="orderNotes" placeholder="Observações: sem cebola, borda, ponto da massa etc."></textarea>
+
+      <button type="submit" class="btn primary">Finalizar pedido no WhatsApp</button>
+    </form>
+  </div>
+</section>
 
       <div class="menu-grid">
         <article class="menu-item reveal">
