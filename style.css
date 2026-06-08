@@ -69,7 +69,11 @@ img {
 .logo span {
   color: var(--gold);
 }
-
+.logo img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
 .nav-links {
   display: flex;
   gap: 28px;
