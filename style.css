@@ -574,6 +574,7 @@ h2 {
 
 .order-form select option {
   background: #15100e;
+   color: #ffffff;
 }
 
 @media (max-width: 880px) {
