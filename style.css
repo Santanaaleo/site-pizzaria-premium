@@ -712,4 +712,12 @@ h2 {
   .order-box {
     grid-template-columns: 1fr !important;
   }
+}.order-form select option {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+.order-form select option:checked {
+  background: #2563eb !important;
+  color: #ffffff !important;
 }
